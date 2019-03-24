@@ -8,6 +8,30 @@ library
   hs-source-dirs: src
   exposed-modules:
     Generics.SOP.HKD
+    Generics.SOP.HKD.Functions
+    Generics.SOP.HKD.Universe
   build-depends:
     base,
     generics-sop >= 0.4
+  default-extensions:
+    ConstraintKinds
+    DataKinds
+    DefaultSignatures
+    DeriveAnyClass
+    DeriveFunctor
+    DeriveFoldable
+    DeriveTraversable
+    DerivingStrategies
+    FlexibleContexts
+    FlexibleInstances
+    FunctionalDependencies
+    GADTs
+    KindSignatures
+    MultiParamTypeClasses
+    PolyKinds
+    RankNTypes
+    ScopedTypeVariables
+    TypeApplications
+    TypeFamilies
+    TypeOperators
+    TypeSynonymInstances
