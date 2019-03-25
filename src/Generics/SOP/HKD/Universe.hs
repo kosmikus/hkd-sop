@@ -7,9 +7,9 @@ import Data.Kind
 import Generics.SOP
 
 
-type family HKDCode (h :: (k -> Type) -> Type) :: [k]
-
 class IsHKDFor (f :: k -> Type) (h :: (k -> Type) -> Type) where
+  type HKDCode (h :: (k -> Type) -> Type) :: [k]
+
   hkdFrom :: h f -> NP f (HKDCode h)
   hkdTo :: NP f (HKDCode h) -> h f
 

@@ -8,6 +8,7 @@ library
   hs-source-dirs: src
   exposed-modules:
     Generics.SOP.HKD
+    Generics.SOP.HKD.FromSOP
     Generics.SOP.HKD.Functions
     Generics.SOP.HKD.Universe
   build-depends:
@@ -26,6 +27,7 @@ library
     FlexibleInstances
     FunctionalDependencies
     GADTs
+    InstanceSigs
     KindSignatures
     MultiParamTypeClasses
     PolyKinds
